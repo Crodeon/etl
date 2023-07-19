@@ -92,7 +92,7 @@ namespace etl
     typedef T value_type;
     typedef integral_constant<T, VALUE> type;
 
-    operator value_type() const
+    constexpr operator value_type() const noexcept
     {
       return value;
     }
